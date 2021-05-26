@@ -1,23 +1,29 @@
-const ayarlar = require('../ayarlar.json')
-const discord = require('discord.js')
-const request = require('request')
+const chalk = require("chalk");
+const moment = require("moment");
+const Discord = require("discord.js");
+const ayarlar = require("../ayarlar.json");
+
+var prefix = ayarlar.prefix;
 
 module.exports = client => {
-    client.user.setStatus("online");
-    const port = ayarlar.port
-    const ip = ayarlar.ip
+  console.log(
+    `[${moment().format("YYYY-MM-DD HH:mm:ss")}] BOT: Aktif, Komutlar yüklendi!`
+  );
+  console.log(
+    `[${moment().format("YYYY-MM-DD HH:mm:ss")}] BOT: ${
+      client.user.username
+    } ismi ile giriş yapıldı!`
+  );
+  client.user.setStatus("online");
+  var oyun = [
+    "Rise Bot",
+    "Rise Code"
 
-    request(`http://mcapi.us/server/status?ip=${ip}&port=${port}`, function (error, response, body) {
-      if (error) return console.log('Error:', error);
-          var info = JSON.parse(body);
-  client.user.setActivity(`${info.players.now} Kişi EpikCraft`);
-})
-    setInterval(() => { 
-        request(`http://mcapi.us/server/status?ip=${ip}&port=${port}`, function (error, response, body) {
-            if (error) return console.log('Error:', error);
-                var info = JSON.parse(body);
-        client.user.setActivity(`${info.players.now} Kişi EpikCraft`);
-        console.log("Online Sayısı Yenilendi")
-      })
-    }, 50000);
- }
+  ];
+
+  setInterval(function() {
+    var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
+
+    client.user.setActivity(oyun[random], "");
+  }, 2 * 2500);
+};

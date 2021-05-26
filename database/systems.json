@@ -1,0 +1,88 @@
+{
+  "mute": [
+    {
+      "guild": "810964143565176903",
+      "guild_name": "Bot Deneme",
+      "user": "793431254162472990",
+      "user_name": "Kartal",
+      "staff": "720187672362090547",
+      "staff_username": "♮ Zeynal05",
+      "channel": "818726618200670248",
+      "channel_name": "💬︲sohbet",
+      "reason": "No Reason Given",
+      "time": "INFINITY",
+      "finishtime": "INFINITY"
+    },
+    {
+      "guild": "804678230001844224",
+      "guild_name": "Türkiyem Altay Gaming #YeniSezon",
+      "user": "451287689866510346",
+      "user_name": "CemMetin",
+      "staff": "767862617527418920",
+      "staff_username": "MevlütBulut",
+      "channel": "811619040975388702",
+      "channel_name": "『📰』genel-sohbet",
+      "reason": "No Reason Given",
+      "time": "INFINITY",
+      "finishtime": "INFINITY"
+    },
+    {
+      "guild": "801124906108452934",
+      "guild_name": "Dark Knight Power Botlist #2.0K",
+      "user": "803925896259043348",
+      "user_name": "Hera",
+      "staff": "702719770268663931",
+      "staff_username": "iEmir.",
+      "channel": "821462948283285504",
+      "channel_name": "🔧・bot-test",
+      "reason": "No Reason Given",
+      "time": "24h",
+      "finishtime": 1617289012721
+    },
+    {
+      "guild": "723517535907217448",
+      "guild_name": "! Santex İtiraz & Botlist & ServerLand #1.4K",
+      "user": "803925896259043348",
+      "user_name": "Hera",
+      "staff": "537205893050138624",
+      "staff_username": "KaskosAdam",
+      "channel": "824683498786127893",
+      "channel_name": "・bot-test-1",
+      "reason": "No Reason Given",
+      "time": "INFINITY",
+      "finishtime": "INFINITY"
+    },
+    {
+      "guild": "750772275795722310",
+      "guild_name": "YT-Faruk.61",
+      "user": "822073266549030949",
+      "user_name": "pandaa",
+      "staff": "750768852983480400",
+      "staff_username": "MrDali",
+      "channel": "783449783963746344",
+      "channel_name": "sohbet-1",
+      "reason": "No Reason Given",
+      "time": "31d",
+      "finishtime": 1620225151736
+    },
+    {
+      "guild": "765567148889997312",
+      "guild_name": "Mist - Kraliyeti",
+      "user": "818704921419186208",
+      "user_name": "EmirWinner",
+      "staff": "638728071062749185",
+      "staff_username": "!      Λstrâ   Yusufhan ' ✯",
+      "channel": "815230653897506816",
+      "channel_name": "🔥︲sohbet",
+      "reason": "No Reason Given",
+      "time": "INFINITY",
+      "finishtime": "INFINITY"
+    }
+  ],
+  "ban": [],
+  "kufurEngel": [],
+  "autorole": [],
+  "reklamEngel": [],
+  "security": [],
+  "counter": []
+}

@@ -16,8 +16,8 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-    "Rise Bot",
-    "Rise Code"
+    "Cowboy",
+    "YAKINDA V12 SÜRÜMÜYLE SİZLERLE..."
 
   ];
 

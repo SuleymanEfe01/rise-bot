@@ -5,7 +5,6 @@ const { Client, Util } = require('discord.js');
 require('./util/eventLoader.js')(client);
 const fs = require('fs');
 const  db  = require('wio.db')
-const qdb = require('quick.db');
 
 
 var prefix = ayarlar.prefix;
@@ -58,7 +57,7 @@ client.load = command => {
             let cmd = require(`./komutlar/${command}`);
             client.commands.set(command, cmd);
             cmd.conf.aliases.forEach(alias => {
-                client.aliases.set(alias, cmd.conf.name);
+                client.aliases.set(alias, cmd.help.name);
             });
             resolve();
         } catch (e) {
@@ -112,8 +111,33 @@ client.on('error', e => {
 
 ///////////////////////eklendim atıldım
 
+client.on('guildDelete', guild => {
 
-	
+    let Crewembed = new Discord.MessageEmbed()
+    
+    .setColor("RED")
+    .setTitle(" ATILDIM !")
+    .addField("Sunucu Adı:", guild.name)
+    .addField("Sunucu sahibi", guild.owner)
+    .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
+    
+       client.channels.cache.get('784906432419069962').send(Crewembed);
+      
+    });
+    
+    
+    client.on('guildCreate', guild => {
+    
+    let Crewembed = new Discord.MessageEmbed()
+    
+    .setColor("GREEN")
+    .setTitle("EKLENDİM !")
+    .addField("Sunucu Adı:", guild.name)
+    .addField("Sunucu sahibi", guild.owner)
+    .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
+    
+       client.channels.cache.get('784906432419069962').send(Crewembed);
+      
+    });
     
 client.login(ayarlar.token);
-
